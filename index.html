@@ -1,18 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-	<script>
-		document.addEventListener("DOMContentLoaded", function(event){
-			var body = document.body,
-			html = document.documentElement;
-			var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-			document.getElementById('wbimpl').style.height = (height - 6).toString() + "px";
-		});
-		//'http://14.186.168.82'
-	</script>
-	</head>
-   <body style='margin:0px;padding:0px;height:100%'>
-	   <!-- 'http://14.186.168.82' -->
-   <iframe id='wbimpl' style='width:100%;overflow:auto;border-style: none;margin:0px;padding:0px' src="https://14.186.168.82" title="BIW Automation"></iframe>
-   </body>
+      		<script type="text/javascript">
+         		function htmlReady() {
+            			window.location.href = 'http://14.186.168.82';
+         		}
+      		</script>
+   		</head>
+   	<body onload="htmlReady();">
+   	</body>
 </html>
