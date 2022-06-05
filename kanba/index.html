@@ -10,8 +10,6 @@
       <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> 
       <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
       <script type="text/babel"> 
-      import React from 'react';
-import ReactDOM from 'react-dom';
          function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -133,9 +131,7 @@ class Game extends React.Component {
 
 // ========================================
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Game />);
-
+const root = ReactDOM.render(<Game />,document.getElementById("root"));
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
